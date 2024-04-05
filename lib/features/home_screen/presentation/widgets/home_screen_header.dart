@@ -34,7 +34,10 @@ class Header extends StatelessWidget {
       height: screenHeight * 1 / 5,
       decoration: const BoxDecoration(
         boxShadow: <BoxShadow>[
-          BoxShadow(color: AppColors.blackSecondary, blurStyle: BlurStyle.outer, blurRadius: 0.1),
+          BoxShadow(
+            color: AppColors.blackTertiary,
+            blurRadius: AppValues.doublePoint5,
+          ),
         ],
         color: AppColors.white,
       ),
