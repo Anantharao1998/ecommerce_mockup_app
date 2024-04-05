@@ -33,9 +33,7 @@ linter:
   - avoid_relative_lib_imports
   - avoid_renaming_method_parameters
   - avoid_return_types_on_setters
-  - avoid_returning_null
   - avoid_returning_null_for_void
-  - avoid_returning_null_for_future
   - avoid_returning_this
   - avoid_setters_without_getters
   - avoid_shadowing_type_parameters
@@ -244,9 +242,7 @@ analyzer:
    avoid_relative_lib_imports: error
    avoid_renaming_method_parameters: error
    avoid_return_types_on_setters: error
-   avoid_returning_null: error
    avoid_returning_null_for_void: error
-   avoid_returning_null_for_future: error
    avoid_returning_this: error
    avoid_setters_without_getters: error
    avoid_shadowing_type_parameters: error

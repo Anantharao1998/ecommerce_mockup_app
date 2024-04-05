@@ -3,3 +3,4 @@ export 'data/datasources/home_screen_remote_datasources.dart';
 export 'data/repositories/home_screen_repository.dart';
 export 'data/repositories/home_screen_repository_impl.dart';
 export 'presentation/views/home_screen_view.dart';
+export 'presentation/widgets/home_screen_header.dart';
