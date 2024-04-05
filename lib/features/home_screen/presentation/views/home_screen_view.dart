@@ -6,9 +6,18 @@ class HomeScreen extends StatelessWidget {
   /// HomeScreen Constructor
   const HomeScreen({super.key});
 
-  Widget _contentArea() => const SizedBox();
-
-  Widget _footer() => const SizedBox();
+  Widget _footer() => BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: "",
+          ),
+        ],
+      );
 
   @override
   Widget build(final BuildContext context) => Scaffold(
@@ -25,17 +34,27 @@ class HomeScreen extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     flex: 3,
-                    child: NavigationMenu(
-                      menuItems: <MenuItem>[
-                        MenuItem(name: "Home", thumbnail: AppAssets.homeMenu),
-                        MenuItem(name: "Vouchers", thumbnail: AppAssets.voucherMenu),
+                    child: Column(
+                      children: <Widget>[
+                        NavigationMenu(
+                          menuItems: <MenuItem>[
+                            MenuItem(name: "Home", thumbnail: AppAssets.homeMenu),
+                            MenuItem(name: "Vouchers", thumbnail: AppAssets.voucherMenu),
+                          ],
+                        ),
+                        NavigationMenu(
+                          menuItems: <MenuItem>[
+                            MenuItem(name: "Home", thumbnail: AppAssets.homeMenu),
+                            MenuItem(name: "Vouchers", thumbnail: AppAssets.voucherMenu),
+                            MenuItem(name: "Tickets", thumbnail: AppAssets.voucherMenu),
+                            MenuItem(name: "Slips", thumbnail: AppAssets.voucherMenu),
+                            MenuItem(name: "Money", thumbnail: AppAssets.voucherMenu),
+                          ],
+                        ),
                       ],
                     ),
                   ),
-                  Expanded(
-                    flex: 4,
-                    child: _contentArea(),
-                  ),
+                  const Expanded(flex: 4, child: HomeContent()),
                 ],
               ),
             ],

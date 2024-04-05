@@ -4,5 +4,6 @@ export 'data/models/menu_item.dart';
 export 'data/repositories/home_screen_repository.dart';
 export 'data/repositories/home_screen_repository_impl.dart';
 export 'presentation/views/home_screen_view.dart';
+export 'presentation/widgets/home_content.dart';
 export 'presentation/widgets/home_screen_header.dart';
 export 'presentation/widgets/navigation_menu.dart';
