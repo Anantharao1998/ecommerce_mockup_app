@@ -21,7 +21,7 @@ class NavigationMenu extends StatelessWidget {
           color: AppColors.white,
           boxShadow: <BoxShadow>[
             BoxShadow(
-              color: AppColors.blackTertiary,
+              color: AppColors.borderLine,
               blurRadius: AppValues.doublePoint5,
             ),
           ],

@@ -31,6 +31,7 @@ class HomeScreen extends StatelessWidget {
                 height: AppValues.double_10,
               ),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Expanded(
                     flex: 3,

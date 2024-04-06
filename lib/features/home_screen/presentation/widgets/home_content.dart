@@ -7,10 +7,14 @@ class HomeContent extends StatelessWidget {
   const HomeContent({super.key});
 
   @override
-  Widget build(final BuildContext context) => const Column(
+  Widget build(final BuildContext context) => Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(AppStrings.contentTitle),
-          Text(AppStrings.contentSubtitle),
+          const Text(
+            AppStrings.contentTitle,
+            style: AppStyles.h1,
+          ).underlined(),
+          const Text(AppStrings.contentSubtitle),
         ],
       );
 }

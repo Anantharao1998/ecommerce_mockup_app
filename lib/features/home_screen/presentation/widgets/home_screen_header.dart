@@ -35,7 +35,7 @@ class Header extends StatelessWidget {
       decoration: const BoxDecoration(
         boxShadow: <BoxShadow>[
           BoxShadow(
-            color: AppColors.blackTertiary,
+            color: AppColors.borderLine,
             blurRadius: AppValues.doublePoint5,
           ),
         ],

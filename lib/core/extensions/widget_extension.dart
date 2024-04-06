@@ -8,3 +8,20 @@ extension WidgetExtension on Widget {
         child: this,
       );
 }
+
+/// Text Extension
+extension TextExtension on Text {
+  /// Gives an underline below Text widgets
+  Widget underlined({final Color? color, final double? height, final double? width}) => Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          this,
+          Divider(
+            color: color ?? AppColors.black,
+            height: height,
+            thickness: width,
+          ),
+        ],
+      );
+}
